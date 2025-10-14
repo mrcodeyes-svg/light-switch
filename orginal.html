@@ -1,0 +1,31 @@
+<title>
+  light switch
+</title>
+<html>
+  <body>
+    <div style="text-align: center;">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAVwmyv14WApdNKcARm8ZoqcTHPGXUSe1dkgR4ElavX-7sjVnB_EpH2gK8QFJ5Lt8pdh0&amp;usqp=CAU" alt="Crystal round yellow GLS light bulb glowing brightly against a plain white background creating a warm and inviting atmosphere" id="imgon">
+     <img style="width: 175px; height: auto; display: none;background-color: transparent; " id="imgoff" src="https://i.postimg.cc/yd33YqZ7/Screenshot-2025-10-13-9-55-37-PM.png">
+    </div>
+    <div style="position: absolute; top: 50%; right: 50%; top: 50%; left: 50%; transform: translate(-5%, -50%);"> 
+      <button onclick="clickeed" id="mrbutton"> on/off</button> 
+    </div>
+  </body> 
+</html>
+<p id="beans"></p>
+<p id="beans1"></p>
+ <script>document.getElementById('mrbutton').onclick= function(clickeed) {  
+       const click = document.getElementById('mrbutton');
+       const off = document.getElementById('imgoff');
+        const on = document.getElementById('imgon');
+        if (on.style.display !== 'none') {
+          on.style.display = 'none';
+          off.style.display = 'inline-block';
+          document.body.style.backgroundColor = 'black';
+        } else {
+          on.style.display = 'inline-block';
+          off.style.display = 'none';
+          document.body.style.backgroundColor = 'white';
+        };
+      };
+   </script>
