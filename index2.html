@@ -1,0 +1,57 @@
+<title>
+  light switch
+</title>
+<html>
+  <audio id="audio" src="https://defensive-white-xtvkxzoi5t.edgeone.app/light-switch-1-401152.mp3"></audio>
+  <body>
+    <div style="text-align: right;">
+    <button id="next">
+      <a href="page2.html">next</a>
+    </button>
+    </div>
+    </body>
+    <div style="text-align: center;">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAVwmyv14WApdNKcARm8ZoqcTHPGXUSe1dkgR4ElavX-7sjVnB_EpH2gK8QFJ5Lt8pdh0&amp;usqp=CAU" alt="Crystal round yellow GLS light bulb glowing brightly against a plain white background creating a warm and inviting atmosphere" id="imgon">
+     <img style="width: 175px; height: auto; display: none;background-color: transparent; " id="imgoff" src="https://i.postimg.cc/yd33YqZ7/Screenshot-2025-10-13-9-55-37-PM.png">
+    </div>
+    <div style="position: absolute; top: 50%; right: 45%; top: 50%; left: 45%; transform: translate(-30%, -50%);"> 
+      <img 
+      style="position: absolute; top: 50%; right: 45%; top: 50%; left: 45%; transform: translate(-27%, -40%); width: 200px; height: fit-content; "; 
+      id="mrbutton" 
+      src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6543/6543836_sd.jpg">
+      </img>
+      <img
+      id="mrbuttoff"
+      style="position: absolute; top: 50%; right: 45%; top: 50%; left: 45%; transform: translate(-27%, -40%); width: 200px; height: fit-content; display: none";
+      src="https://i.postimg.cc/CMn715Tj/Screenshot-2025-10-13-11-08-03-PM.png">
+      </img>
+    </div>
+  </body> 
+</html>
+<p id="beans"></p>
+<p id="beans1"></p>
+ <script> const click = document.getElementById('mrbutton'); 
+ click.onclick = function(clickeed) {  
+       const nonclick = document.getElementById('mrbuttoff');
+       const off = document.getElementById('imgoff');
+        const on = document.getElementById('imgon');
+        {
+          on.style.display = 'none';
+          off.style.display = 'inline-block';
+          click.style.display = 'none';
+          nonclick.style.display = 'inline-block';
+          document.body.style.backgroundColor = 'black';
+          document.getElementById('audio').play();
+        };
+        nonclick.onclick = function(clickk) {
+        off.style.display !== 'inline-block'; {
+          on.style.display = 'inline-block';
+          off.style.display = 'none';
+          click.style.display = 'inline-block';
+          nonclick.style.display = 'none';
+          document.body.style.backgroundColor = 'white';
+          document.getElementById('audio').play();
+        };
+      };
+      };
+   </script>
